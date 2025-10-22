@@ -1,105 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Your Site Title</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Petra Gielissen</title>
   <style>
     body {
-      font-family: 'Inter', sans-serif;
-      margin: 0;
-      padding: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      text-align: center;
       background-color: #f7f7f7;
+      padding: 20px;
+      margin: 0;
     }
 
-    header {
-      text-align: center;
-      margin-top: 40px;
+    h1 {
+      font-size: 2em;
+      margin-bottom: 0.2em;
     }
 
-    section {
-      margin: 40px auto;
-      max-width: 1300px;
-      padding: 0 16px;
+    p {
+      margin: 0.5em auto;
+      max-width: 600px;
     }
 
-    h2 {
-      font-size: 1.4em;
-      font-weight: 600;
+    .button {
+      display: inline-block;
+      margin: 20px 0;
+      padding: 10px 18px;
+      font-size: 14px;
+      color: white;
+      background-color: #1E4A73;
+      border: none;
+      border-radius: 4px;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    .section-header {
       text-align: left;
+      margin-top: 40px;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 1100px;
+      font-size: 1.4em;
     }
 
-    footer {
-      text-align: center;
-      margin: 40px 0;
-      font-size: 0.9em;
-      color: #555;
+    .dashboard-container {
+      display: flex;
+      justify-content: center;
+      padding: 10px;
     }
 
-    @media (max-width: 768px) {
-      object.tableauViz {
-        height: 75vh !important;
+    .tableauPlaceholder {
+      max-width: 100%;
+      width: 100%;
+      min-height: 800px;
+      overflow: hidden;
+    }
+
+    @media screen and (max-width: 768px) {
+      .tableauPlaceholder {
+        min-height: 1200px;
       }
-    }
 
-    @media (max-width: 480px) {
-      object.tableauViz {
-        height: 65vh !important;
+      .section-header {
+        font-size: 1.2em;
+        padding-left: 10px;
+        padding-right: 10px;
       }
     }
   </style>
 </head>
 
 <body>
-  <header>
-    <h1>Petra Gielissen</h1>
-    <p style="max-width: 700px; margin: 0 auto; line-height: 1.6;">
-      I help financial institutions turn complexity into clarity,<br>
-      whether that means navigating corporate actions, surfacing shareholder insights, or<br>
-      supporting critical workflows without risk or delay.
-    </p>
-    <p style="margin-top: 10px;">
-      <a href="https://www.linkedin.com/in/petra-gielissen/" target="_blank">View LinkedIn Profile</a>
-    </p>
-  </header>
 
-  <section>
-    <h2>Featured Tableau Dashboard:</h2>
-    <div class='tableauPlaceholder' id='vizContainer' style='width: 100%; position: relative;'>
+  <h1>Petra Gielissen</h1>
+  <p>I help financial institutions turn complexity into clarity,</p>
+  <p>whether that means navigating corporate actions, surfacing shareholder insights, or</p>
+  <p>supporting critical workflows without risk or delay.</p>
+
+  <a href="https://www.linkedin.com/in/petra-gielissen/" class="button" target="_blank">View LinkedIn Profile</a>
+
+  <h2 class="section-header">Featured Tableau Dashboard:</h2>
+
+  <div class="dashboard-container">
+    <div class="tableauPlaceholder" id="viz1699904503182" style="position: relative">
       <noscript>
-        <a href='https://public.tableau.com/views/NYCCostofLiving/Dashboard4'>
-          <img alt='Northeast Wage Growth vs Inflation'
-               src='https://public.tableau.com/static/images/NY/NYCCostofLiving/Dashboard4/1_rss.png'
-               style='border: none; width: 100%;' />
+        <a href="https://public.tableau.com/views/NYCCostofLiving/Dashboard4" target="_blank">
+          <img alt="Northeast Wage Growth vs Inflation"
+               src="https://public.tableau.com/static/images/NY/NYCCostofLiving/Dashboard4/1_rss.png"
+               style="border: none;" />
         </a>
       </noscript>
-      <object class='tableauViz' style='width: 100%; height: 85vh;'>
-        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F'/>
-        <param name='embed_code_version' value='3'/>
-        <param name='site_root' value=''/>
-        <param name='name' value='NYCCostofLiving&#47;Dashboard4'/>
-        <param name='tabs' value='no'/>
-        <param name='toolbar' value='yes'/>
-        <param name='animate_transition' value='yes'/>
-        <param name='display_static_image' value='yes'/>
-        <param name='display_spinner' value='yes'/>
-        <param name='display_overlay' value='yes'/>
-        <param name='display_count' value='yes'/>
-        <param name='language' value='en-US'/>
+      <object class="tableauViz" style="display:none;">
+        <param name="host_url" value="https%3A%2F%2Fpublic.tableau.com%2F" />
+        <param name="embed_code_version" value="3" />
+        <param name="site_root" value="" />
+        <param name="name" value="NYCCostofLiving/Dashboard4" />
+        <param name="tabs" value="no" />
+        <param name="toolbar" value="yes" />
+        <param name="static_image"
+               value="https://public.tableau.com/static/images/NY/NYCCostofLiving/Dashboard4/1.png" />
+        <param name="animate_transition" value="yes" />
+        <param name="display_static_image" value="yes" />
+        <param name="display_spinner" value="yes" />
+        <param name="display_overlay" value="yes" />
+        <param name="display_count" value="yes" />
+        <param name="language" value="en-US" />
       </object>
     </div>
-    <script type='text/javascript'>
-      var divElement = document.getElementById('vizContainer');
-      var vizElement = divElement.getElementsByTagName('object')[0];
-      var scriptElement = document.createElement('script');
-      scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
-      vizElement.parentNode.insertBefore(scriptElement, vizElement);
-    </script>
-  </section>
+  </div>
 
-  <footer>
-    <p>© 2025 Petra Gielissen</p>
-  </footer>
+  <script type="text/javascript">
+    var divElement = document.getElementById("viz1699904503182");
+    var vizElement = divElement.getElementsByTagName("object")[0];
+    if (window.innerWidth > 800) {
+      vizElement.style.width = "1100px";
+      vizElement.style.height = "900px";
+    } else {
+      vizElement.style.width = "100%";
+      vizElement.style.height = "1200px";
+    }
+    var scriptElement = document.createElement("script");
+    scriptElement.src = "https://public.tableau.com/javascripts/api/viz_v1.js";
+    vizElement.parentNode.insertBefore(scriptElement, vizElement);
+  </script>
+
 </body>
 </html>
 
